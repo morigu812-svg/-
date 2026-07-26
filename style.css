@@ -1,0 +1,329 @@
+/* ==========================
+   Prospi Guide Style
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI","Yu Gothic",sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:
+    radial-gradient(circle at top,#1a5dc9 0%,#08224d 45%,#020913 100%);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* 星空のような背景 */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+        radial-gradient(gold 1px,transparent 1px),
+        radial-gradient(rgba(255,255,255,.5) 1px,transparent 1px);
+    background-size:120px 120px,80px 80px;
+    opacity:.15;
+    animation:moveStars 60s linear infinite;
+    pointer-events:none;
+    z-index:-1;
+}
+
+@keyframes moveStars{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(120px);
+    }
+}
+
+/* ==========================
+   Header
+========================== */
+
+header{
+
+    background:
+    linear-gradient(135deg,#0d4db8,#0a2d70);
+
+    border-bottom:3px solid gold;
+
+    box-shadow:0 0 25px rgba(255,215,0,.4);
+
+    padding:25px 50px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+.logo h1{
+
+    color:gold;
+
+    font-size:34px;
+
+    text-shadow:
+    0 0 8px gold,
+    0 0 15px rgba(255,215,0,.6);
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    transition:.25s;
+
+}
+
+nav a:hover{
+
+    background:gold;
+
+    color:#08224d;
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================
+   Hero
+========================== */
+
+.hero{
+
+    height:600px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.hero h2{
+
+    font-size:64px;
+
+    color:gold;
+
+    text-shadow:0 0 18px gold;
+
+}
+
+.hero p{
+
+    margin-top:20px;
+
+    font-size:22px;
+
+    color:#ddd;
+
+}
+
+.hero button{
+
+    margin-top:45px;
+
+    padding:18px 50px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    background:
+    linear-gradient(#ffe57a,#ffbf00);
+
+    color:#06204d;
+
+    transition:.2s;
+
+    box-shadow:
+    0 0 18px gold;
+
+    animation:glow 2s infinite;
+
+}
+
+.hero button:hover{
+
+    transform:scale(1.08);
+
+}
+
+.hero button:active{
+
+    transform:scale(.94);
+
+}
+
+@keyframes glow{
+
+0%{
+
+box-shadow:0 0 10px gold;
+
+}
+
+50%{
+
+box-shadow:0 0 35px gold;
+
+}
+
+100%{
+
+box-shadow:0 0 10px gold;
+
+}
+
+}
+
+/* ==========================
+   Cards
+========================== */
+
+.menu{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    padding:70px;
+
+}
+
+.card{
+
+    background:
+    linear-gradient(180deg,#144aa0,#08224d);
+
+    border:2px solid gold;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    transition:.25s;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.4);
+
+}
+
+.card:hover{
+
+    transform:
+    translateY(-8px)
+    scale(1.02);
+
+    box-shadow:
+    0 0 25px gold;
+
+}
+
+.card h2{
+
+    color:gold;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+}
+
+.card button{
+
+    margin-top:20px;
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:
+    linear-gradient(#ffe57a,#ffbf00);
+
+    color:#06204d;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+
+    margin-top:60px;
+
+    background:#021020;
+
+    border-top:3px solid gold;
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#bbb;
+
+}
