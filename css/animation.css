@@ -1,0 +1,331 @@
+/* ===========================
+   光るボタン
+=========================== */
+
+button{
+
+position:relative;
+overflow:hidden;
+
+transition:.25s;
+
+}
+
+button::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-120%;
+
+width:60%;
+height:100%;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.8),
+transparent
+);
+
+transform:skewX(-25deg);
+
+}
+
+button:hover::before{
+
+animation:shine .7s;
+
+}
+
+@keyframes shine{
+
+100%{
+
+left:180%;
+
+}
+
+}
+
+button:hover{
+
+transform:translateY(-3px) scale(1.06);
+
+box-shadow:
+0 0 12px gold,
+0 0 25px gold,
+0 0 45px rgba(255,215,0,.8);
+
+}
+
+button:active{
+
+transform:scale(.94);
+
+}
+
+/* ===========================
+   カード演出
+=========================== */
+
+.card{
+
+position:relative;
+
+overflow:hidden;
+
+transition:.35s;
+
+}
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+top:-100%;
+left:-100%;
+
+width:220%;
+height:220%;
+
+background:
+linear-gradient(
+45deg,
+transparent,
+rgba(255,255,255,.12),
+transparent
+);
+
+transform:rotate(25deg);
+
+transition:.8s;
+
+}
+
+.card:hover::before{
+
+top:100%;
+left:100%;
+
+}
+
+.card:hover{
+
+transform:
+translateY(-12px)
+scale(1.03);
+
+border-color:#ffd700;
+
+box-shadow:
+0 0 18px gold,
+0 0 40px rgba(255,215,0,.45);
+
+}
+
+/* ===========================
+   フェードイン
+=========================== */
+
+.fade{
+
+opacity:0;
+
+transform:translateY(40px);
+
+animation:fadeIn .8s forwards;
+
+}
+
+@keyframes fadeIn{
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===========================
+   タイトル
+=========================== */
+
+.hero h2{
+
+animation:titleGlow 3s infinite;
+
+}
+
+@keyframes titleGlow{
+
+0%{
+
+text-shadow:
+0 0 8px gold;
+
+}
+
+50%{
+
+text-shadow:
+0 0 30px gold,
+0 0 60px gold;
+
+}
+
+100%{
+
+text-shadow:
+0 0 8px gold;
+
+}
+
+}
+
+/* ===========================
+   ローディング
+=========================== */
+
+#loading{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:#021020;
+
+color:gold;
+
+font-size:60px;
+
+font-weight:bold;
+
+z-index:99999;
+
+animation:loadingPulse 1s infinite;
+
+}
+
+@keyframes loadingPulse{
+
+0%{
+
+letter-spacing:2px;
+
+}
+
+50%{
+
+letter-spacing:10px;
+
+text-shadow:
+0 0 20px gold,
+0 0 45px gold;
+
+}
+
+100%{
+
+letter-spacing:2px;
+
+}
+
+}
+
+/* ===========================
+   メニュー
+=========================== */
+
+nav a{
+
+position:relative;
+
+}
+
+nav a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+bottom:-4px;
+
+width:0;
+height:3px;
+
+background:gold;
+
+transition:.3s;
+
+}
+
+nav a:hover::after{
+
+width:100%;
+
+}
+
+/* ===========================
+   背景の光
+=========================== */
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+top:-30%;
+left:-30%;
+
+width:160%;
+height:160%;
+
+background:
+radial-gradient(circle,
+rgba(255,215,0,.05),
+transparent 70%);
+
+animation:bgRotate 25s linear infinite;
+
+pointer-events:none;
+
+z-index:-2;
+
+}
+
+@keyframes bgRotate{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
