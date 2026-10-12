@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://morigu812-svg.github.io/-/sitemap.xml
