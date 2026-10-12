@@ -1,28 +1,1890 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="南森町まちなかクリニックの公式ウェブサイト。診療案内、健康管理、アクセス情報をご案内します。">
-<meta name="theme-color" content="#f5f8f7">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f6f8f3">
+<meta name="description" content="南森町まちなかクリニック。地域の皆さまの毎日の健康を支え、安心して相談できるクリニックを目指します。">
 <title>南森町まちなかクリニック｜毎日に、安心を。</title>
+
 <style>
-:root{color-scheme:light;--ink:#203431;--muted:#61736f;--green:#47796e;--pale:#e8f1ed;--line:rgba(47,82,73,.14);--glass:rgba(255,255,255,.72)}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:radial-gradient(ellipse at 8% 8%,#e2efea 0,transparent 34%),radial-gradient(ellipse at 90% 38%,#f4eadc 0,transparent 32%),#f7f8f5;line-height:1.8}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.site-header{position:sticky;top:0;z-index:10;background:rgba(248,250,248,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:750;letter-spacing:.04em;line-height:1.35}.brand small{display:block;font-size:11px;color:var(--muted);font-weight:500;letter-spacing:.12em}.nav-links{display:flex;gap:25px;align-items:center;font-size:14px}.nav-links a:hover{color:var(--green)}.nav-toggle{display:none;border:1px solid var(--line);border-radius:14px;background:var(--glass);width:44px;height:42px;font-size:23px;color:var(--ink)}.hero{padding:90px 0 72px}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border:1px solid var(--line);border-radius:99px;background:var(--glass);font-size:12px;color:var(--green);letter-spacing:.08em}.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:#79a99b}.hero h1{font-size:clamp(38px,5.4vw,68px);line-height:1.23;letter-spacing:-.045em;margin:22px 0}.hero h1 span{color:var(--green)}.lead{font-size:17px;color:var(--muted);max-width:520px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:13px 21px;border-radius:99px;border:1px solid var(--line);font-weight:650;font-size:14px;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px #294f4317}.btn.primary{background:var(--green);color:white;border-color:var(--green)}.hero-art{min-height:390px;border:1px solid #ffffffc9;border-radius:34px;background:linear-gradient(145deg,#ffffffb8,#dcebe4a8);box-shadow:0 24px 70px #36594d18;display:grid;place-items:center;position:relative;overflow:hidden}.orb{position:absolute;border-radius:50%;filter:blur(1px)}.orb.one{width:230px;height:230px;background:#c4ded2;top:26px;right:22px}.orb.two{width:175px;height:175px;background:#f0dfc8;bottom:15px;left:10px}.clinic-mark{position:relative;width:190px;height:190px;border-radius:48px;background:#ffffffb8;backdrop-filter:blur(12px);border:1px solid white;box-shadow:0 20px 60px #294f4320;display:grid;place-items:center;transform:rotate(-5deg)}.clinic-mark svg{width:110px;height:110px}.art-note{position:absolute;bottom:25px;right:25px;padding:13px 17px;border-radius:18px;background:#ffffffb8;backdrop-filter:blur(12px);font-size:13px;color:var(--muted);border:1px solid #fff}.section{padding:76px 0}.section-head{max-width:650px;margin-bottom:30px}.kicker{font-size:12px;letter-spacing:.16em;color:var(--green);font-weight:750}.section h2{font-size:clamp(28px,4vw,42px);line-height:1.35;letter-spacing:-.03em;margin:8px 0 12px}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:25px;border:1px solid #fff;background:var(--glass);backdrop-filter:blur(16px);border-radius:24px;box-shadow:0 12px 36px #31574b0b}.card .num{font-size:12px;color:var(--green);letter-spacing:.12em;font-weight:750}.card h3{font-size:19px;margin:12px 0 8px}.card p{font-size:14px;color:var(--muted);margin:0}.iconbox{width:46px;height:46px;display:grid;place-items:center;border-radius:15px;background:var(--pale);color:var(--green);font-size:22px;margin-bottom:15px}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:center}.about-visual{min-height:290px;border-radius:28px;background:linear-gradient(135deg,#dcebe4,#f1e7d9);display:grid;place-items:center;border:1px solid #fff}.about-visual .cross{font-size:100px;font-weight:200;color:#5b8b7c}.about-copy{padding:12px 0}.about-copy p{color:var(--muted)}.info-panel{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:30px;border-radius:28px;background:var(--glass);border:1px solid #fff;backdrop-filter:blur(18px)}.info-panel h3{margin-top:0}.info-row{display:grid;grid-template-columns:90px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}.info-row:last-child{border-bottom:0}.info-row strong{font-weight:650}.access-note{padding:18px;border-radius:18px;background:var(--pale);color:var(--muted);font-size:14px}.cta{padding:40px;border-radius:30px;background:linear-gradient(120deg,#315f53,#608c7e);color:white;display:flex;justify-content:space-between;align-items:center;gap:25px}.cta p{color:#e3eee9;margin-bottom:0}.cta .btn{background:white;color:var(--ink);white-space:nowrap}.site-footer{margin-top:75px;padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.reveal{animation:rise .7s both}@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}:focus-visible{outline:3px solid #8bb9aa;outline-offset:3px}
-@media(max-width:760px){.wrap{width:min(100% - 28px,600px)}.nav{height:68px}.nav-toggle{display:block}.nav-links{display:none;position:absolute;top:67px;left:14px;right:14px;padding:18px;flex-direction:column;align-items:stretch;gap:0;border:1px solid var(--line);border-radius:20px;background:rgba(250,252,250,.96);backdrop-filter:blur(20px);box-shadow:0 20px 40px #20343116}.nav-links.open{display:flex}.nav-links a{padding:11px 8px;border-bottom:1px solid var(--line)}.nav-links a:last-child{border:0}.hero{padding:55px 0 42px}.hero-grid,.about-grid,.info-panel{grid-template-columns:1fr}.hero-art{min-height:290px;grid-row:1}.clinic-mark{width:145px;height:145px;border-radius:38px}.clinic-mark svg{width:85px}.orb.one{width:170px;height:170px}.orb.two{width:130px;height:130px}.hero h1{font-size:42px}.lead{font-size:15px}.section{padding:52px 0}.cards{grid-template-columns:1fr}.card{padding:22px}.about-visual{min-height:200px}.info-panel{padding:22px}.cta{padding:27px;align-items:flex-start;flex-direction:column}.cta .btn{white-space:normal}.section h2{font-size:30px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+:root {
+  --green: #47765d;
+  --green-dark: #294c3a;
+  --green-light: #eaf1e8;
+  --mint: #dce9dc;
+  --cream: #f6f8f3;
+  --paper: #ffffff;
+  --ink: #25352c;
+  --muted: #718076;
+  --line: #e4e9e1;
+  --shadow: 0 18px 50px rgba(38, 67, 48, .08);
+  --radius: 25px;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family:
+    -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", "Hiragino Kaku Gothic ProN",
+    "Yu Gothic", Meiryo, sans-serif;
+  line-height: 1.9;
+  letter-spacing: .025em;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+
+.wrap {
+  width: min(1120px, calc(100% - 44px));
+  margin-inline: auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(246, 248, 243, .88);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(220, 229, 218, .75);
+}
+
+.nav {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+}
+
+.logo {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-weight: 750;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: .035em;
+}
+
+.brand-sub {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: .12em;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 12px;
+  color: #506257;
+}
+
+.nav-links a:hover { color: var(--green); }
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--green-dark);
+  color: white;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-size: 12px;
+  white-space: nowrap;
+  transition: transform .2s, background .2s;
+}
+
+.nav-cta:hover {
+  background: var(--green);
+  transform: translateY(-2px);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  color: var(--green-dark);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 92px 0 85px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 540px;
+  height: 540px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #e4eee0 0%, rgba(228,238,224,0) 72%);
+  right: -130px;
+  top: -125px;
+  pointer-events: none;
+}
+
+.hero-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.12fr .88fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 25px;
+  height: 1px;
+  background: var(--green);
+}
+
+.hero h1 {
+  font-size: clamp(38px, 5.1vw, 65px);
+  line-height: 1.35;
+  letter-spacing: -.045em;
+  font-weight: 700;
+  margin: 25px 0;
+}
+
+.hero h1 span { color: var(--green); }
+
+.hero-copy {
+  max-width: 480px;
+  font-size: 14px;
+  line-height: 2.2;
+  color: #657369;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  border-radius: 999px;
+  padding: 13px 23px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(35, 65, 45, .12);
+}
+
+.button-primary {
+  background: var(--green-dark);
+  color: white;
+}
+
+.button-secondary {
+  border: 1px solid #d9e2d7;
+  background: rgba(255,255,255,.7);
+}
+
+.hero-art {
+  position: relative;
+  min-height: 410px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.art-circle {
+  width: min(100%, 390px);
+  aspect-ratio: 1;
+  border-radius: 48% 52% 45% 55% / 52% 43% 57% 48%;
+  background: linear-gradient(145deg, #e6efe1, #cbdcc9);
+  display: grid;
+  place-items: center;
+  position: relative;
+  animation: float 7s ease-in-out infinite;
+}
+
+.art-circle::before,
+.art-circle::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(71,118,93,.18);
+}
+
+.art-circle::before {
+  inset: 24px;
+}
+
+.art-circle::after {
+  inset: 49px;
+}
+
+.art-icon {
+  width: 58%;
+  max-width: 220px;
+  position: relative;
+  z-index: 1;
+}
+
+.float-note {
+  position: absolute;
+  background: rgba(255,255,255,.91);
+  border: 1px solid rgba(228,233,225,.9);
+  box-shadow: var(--shadow);
+  border-radius: 17px;
+  padding: 13px 17px;
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.float-note strong {
+  display: block;
+  font-size: 13px;
+  color: var(--green-dark);
+}
+
+.note-one { top: 55px; left: -2px; }
+.note-two { bottom: 54px; right: -6px; }
+
+section { padding: 92px 0; }
+
+.section-heading {
+  max-width: 670px;
+  margin-bottom: 43px;
+}
+
+.section-heading.center {
+  text-align: center;
+  margin-inline: auto;
+}
+
+.section-heading.center .eyebrow::before { display: none; }
+
+.section-heading h2 {
+  font-size: clamp(28px, 3.7vw, 43px);
+  line-height: 1.5;
+  letter-spacing: -.035em;
+  margin: 13px 0 12px;
+}
+
+.section-heading p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+  line-height: 2.1;
+}
+
+.about-section { background: white; }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.about-art {
+  min-height: 320px;
+  background: linear-gradient(140deg, #e8f0e5, #f3f5ed);
+  border-radius: var(--radius);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.about-art svg {
+  width: 66%;
+  max-width: 260px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-art::before,
+.about-art::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(71,118,93,.15);
+}
+
+.about-art::before { width: 300px; height: 300px; }
+.about-art::after { width: 220px; height: 220px; }
+
+.about-text h3 {
+  font-size: 23px;
+  line-height: 1.65;
+  margin: 0 0 18px;
+}
+
+.about-text p {
+  font-size: 13px;
+  color: #657369;
+  line-height: 2.2;
+  margin: 0 0 14px;
+}
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+  margin-top: 26px;
+}
+
+.value {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.value b {
+  display: block;
+  color: var(--green);
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.value span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: .72fr 1.28fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.doctor-portrait {
+  min-height: 390px;
+  border-radius: var(--radius);
+  background: linear-gradient(155deg, #e8eee3, #d7e4d4);
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.doctor-portrait svg {
+  width: 62%;
+  max-width: 230px;
+  position: relative;
+  z-index: 1;
+}
+
+.doctor-caption {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  right: 18px;
+  background: rgba(255,255,255,.82);
+  border-radius: 13px;
+  padding: 10px 14px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.doctor-caption strong {
+  color: var(--green-dark);
+  display: block;
+  font-size: 13px;
+}
+
+.doctor-copy h3 {
+  font-size: 27px;
+  margin: 12px 0;
+}
+
+.doctor-copy p {
+  font-size: 13px;
+  line-height: 2.2;
+  color: #657369;
+}
+
+.doctor-name {
+  font-size: 23px;
+  font-weight: 750;
+  color: var(--green-dark);
+  margin-top: 25px;
+}
+
+.doctor-name small {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 500;
+  margin-right: 12px;
+}
+
+.care-section { background: white; }
+
+.care-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+
+.care-card {
+  padding: 27px 25px;
+  border: 1px solid var(--line);
+  border-radius: 21px;
+  background: #fff;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.care-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.care-icon {
+  width: 49px;
+  height: 49px;
+  border-radius: 16px;
+  background: var(--green-light);
+  color: var(--green);
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  margin-bottom: 19px;
+}
+
+.care-card h3 {
+  font-size: 16px;
+  margin: 0 0 9px;
+}
+
+.care-card p {
+  font-size: 12px;
+  line-height: 2;
+  color: var(--muted);
+  margin: 0;
+}
+
+.hours-section { background: #eef3eb; }
+
+.hours-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.info-panel {
+  background: white;
+  border-radius: var(--radius);
+  padding: 30px;
+  box-shadow: 0 12px 35px rgba(38,67,48,.04);
+}
+
+.info-panel h3 {
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.hours-table th,
+.hours-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 13px 5px;
+  text-align: center;
+}
+
+.hours-table th {
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.hours-table td:first-child {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.pending {
+  display: inline-block;
+  color: #6b7c6e;
+  background: #eef3eb;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 10px;
+}
+
+.info-panel p {
+  font-size: 12px;
+  line-height: 2;
+  color: var(--muted);
+}
+
+.map-placeholder {
+  min-height: 150px;
+  background: linear-gradient(140deg, #edf3e9, #f8f8f2);
+  border-radius: 17px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 25px;
+  color: var(--muted);
+  margin-bottom: 19px;
+}
+
+.map-placeholder strong {
+  color: var(--green-dark);
+  display: block;
+  font-size: 15px;
+}
+
+.phone-number {
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 750;
+  color: var(--green-dark);
+  letter-spacing: .02em;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+
+.contact-section { background: white; }
+
+.contact-card {
+  background: var(--green-dark);
+  color: white;
+  border-radius: 30px;
+  padding: 54px 35px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card::before,
+.contact-card::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.contact-card::before { top: -120px; left: -50px; }
+.contact-card::after { bottom: -150px; right: -30px; }
+
+.contact-card h2 {
+  font-size: clamp(25px, 3.5vw, 38px);
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+.contact-card p {
+  color: rgba(255,255,255,.75);
+  font-size: 13px;
+  line-height: 2;
+}
+
+.contact-card .phone-number { color: white; }
+
+.contact-card .button {
+  margin-top: 15px;
+  background: white;
+  color: var(--green-dark);
+}
+
+footer {
+  padding: 35px 0;
+  background: var(--cream);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+}
+
+.footer-copy {
+  font-size: 10px;
+  color: var(--muted);
+}
+
+ 
+
+.health-section {
+  background:
+    radial-gradient(ellipse at 0% 0%, rgba(219,233,216,.55), transparent 48%),
+    #f7f8f4;
+}
+
+.health-intro {
+  max-width: 690px;
+  margin: -20px auto 34px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 2.2;
+}
+
+.health-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 24px 28px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  color: var(--ink);
+  box-shadow: 0 8px 28px rgba(38,67,48,.035);
+  transition: box-shadow .2s, transform .2s;
+}
+
+.health-banner:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.health-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.health-banner-icon {
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: var(--green-light);
+  font-size: 25px;
+}
+
+.health-banner strong {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 3px;
+}
+
+.health-banner small {
+  color: var(--muted);
+  font-size: 12px;
+  display: block;
+}
+
+.health-arrow {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #edf3e9;
+  display: grid;
+  place-items: center;
+  color: var(--green-dark);
+  font-size: 19px;
+  transition: transform .3s;
+}
+
+.health-banner[aria-expanded="true"] .health-arrow {
+  transform: rotate(180deg);
+}
+
+.health-content {
+  display: none;
+  margin-top: 25px;
+}
+
+.health-content.open { display: block; }
+
+.health-tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.health-count {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.health-count strong { color: var(--green-dark); }
+
+.health-filter {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  border: 1px solid #dce5d9;
+  background: white;
+  color: #5f7063;
+  border-radius: 999px;
+  padding: 7px 13px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+}
+
+.filter-button.active {
+  background: var(--green-dark);
+  color: white;
+  border-color: var(--green-dark);
+}
+
+.health-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.health-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 25px;
+  min-width: 0;
+  align-self: start;
+  transition: box-shadow .2s, transform .2s;
+}
+
+.health-card:hover {
+  box-shadow: 0 12px 30px rgba(38,67,48,.06);
+  transform: translateY(-2px);
+}
+
+.health-card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.health-number {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  color: var(--green);
+}
+
+.health-tag {
+  font-size: 10px;
+  color: #637b68;
+  background: #edf3e9;
+  border-radius: 999px;
+  padding: 4px 9px;
+}
+
+.health-emoji {
+  margin-left: auto;
+  font-size: 22px;
+}
+
+.health-card h3 {
+  font-size: 18px;
+  line-height: 1.65;
+  letter-spacing: -.02em;
+  margin: 0 0 14px;
+}
+
+.health-summary {
+  color: #59685e;
+  font-size: 13px;
+  line-height: 2.05;
+  margin: 0 0 15px;
+}
+
+.health-more {
+  border-top: 1px solid #edf0e9;
+  padding-top: 14px;
+  margin-top: 12px;
+}
+
+.health-more p {
+  font-size: 12px;
+  line-height: 2.1;
+  color: #718076;
+  margin: 0 0 12px;
+}
+
+.health-more p:last-child { margin-bottom: 0; }
+
+.health-more strong { color: #405e49; }
+
+.health-card-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 17px;
+  padding-top: 13px;
+  border-top: 1px solid #edf0e9;
+  font-size: 10px;
+  color: #8b968c;
+}
+
+.health-card-foot span:last-child { text-align: right; }
+
+.health-disclaimer {
+  margin-top: 22px;
+  border-radius: 15px;
+  background: #edf2e9;
+  color: #6c796e;
+  font-size: 11px;
+  line-height: 1.9;
+  padding: 15px 18px;
+}
+
+.health-empty {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  text-align: center;
+  padding: 30px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition: none !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
+
+@media (max-width: 850px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    padding: 22px;
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 17px;
+  }
+
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 5px 0; }
+  .menu-toggle { display: block; }
+  .nav-cta { display: none; }
+
+  .hero { padding: 65px 0 55px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 20px; }
+  .hero-copy { max-width: 600px; }
+  .hero-art { min-height: 330px; }
+  .art-circle { width: min(78%, 330px); }
+  .note-one { left: 4%; top: 30px; }
+  .note-two { right: 3%; bottom: 30px; }
+
+  section { padding: 68px 0; }
+  .about-grid, .doctor-grid { grid-template-columns: 1fr; gap: 30px; }
+  .about-art { min-height: 270px; }
+  .doctor-portrait { min-height: 300px; }
+  .care-grid { grid-template-columns: repeat(2, 1fr); }
+  .hours-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px) {
+  .wrap { width: min(100% - 30px, 1120px); }
+  .brand-name { font-size: 13px; }
+  .hero h1 { font-size: 39px; }
+  .hero-art { min-height: 280px; }
+  .art-circle { width: 270px; }
+  .float-note { padding: 10px 12px; font-size: 10px; }
+  .float-note strong { font-size: 11px; }
+  .note-one { left: 0; }
+  .note-two { right: 0; }
+  .section-heading h2 { font-size: 29px; }
+  .care-grid { grid-template-columns: 1fr; }
+  .values { gap: 9px; }
+  .value b { font-size: 12px; }
+  .value span { font-size: 10px; }
+  .info-panel { padding: 21px 16px; }
+  .contact-card { padding: 42px 18px; }
+  .footer-inner { align-items: flex-start; flex-direction: column; }
+  .health-banner { padding: 17px 15px; gap: 10px; }
+  .health-banner-left { gap: 12px; }
+  .health-banner-icon { width: 45px; height: 45px; border-radius: 14px; }
+  .health-banner strong { font-size: 14px; }
+  .health-banner small { font-size: 10px; }
+  .health-grid { grid-template-columns: 1fr; }
+  .health-card { padding: 21px; }
+  .health-card h3 { font-size: 17px; }
+  .health-tools { align-items: flex-start; }
+}
+
+
+/* ===== iOS 27 / Liquid Glass enhancement layer ===== */
+:root {
+  --glass-white: rgba(255,255,255,.56);
+  --glass-border: rgba(255,255,255,.78);
+  --glass-shadow: 0 18px 55px rgba(35, 61, 43, .11),
+                  0 3px 12px rgba(35, 61, 43, .05),
+                  inset 0 1px 0 rgba(255,255,255,.92);
+  --glass-blur: blur(28px) saturate(175%);
+}
+body {
+  background:
+    radial-gradient(ellipse at 8% 4%, rgba(202,226,204,.72), transparent 34rem),
+    radial-gradient(ellipse at 96% 23%, rgba(222,225,248,.52), transparent 32rem),    radial-gradient(ellipse at 50% 76%, rgba(255,255,255,.8), transparent 42rem),
+    #f2f6f0;
+  background-attachment: fixed;
+}
+header {
+  background: rgba(246,249,244,.62) !important;
+  border-bottom: 1px solid rgba(255,255,255,.78) !important;
+  box-shadow: 0 8px 32px rgba(38,65,46,.055);
+  backdrop-filter: blur(30px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(30px) saturate(180%) !important;
+}
+.nav, .brand, .nav-links, .nav-cta, .button,
+.news-panel, .care-card, .about-visual, .about-symbol,
+.hours-card, .hours-info, .access-info, .map-placeholder,
+.map-card, .faq-item, .contact-panel, .health-banner,
+.health-content, .health-card, .article-card, .health-filter button,
+.health-tools, .health-detail, .modal, .float-note {
+  isolation: isolate;
+}
+.news-panel, .care-card, .hours-card, .hours-info, .access-info,
+.map-card, .faq-item, .health-card, .article-card, .health-detail,
+.health-content, .health-banner, .health-tools, .modal {
+  background: var(--glass-white) !important;
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: var(--glass-shadow) !important;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+.care-card, .health-card, .article-card, .faq-item, .hours-card,
+.access-info, .news-panel, .health-banner, .health-content {
+  border-radius: 26px !important;
+  transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+}
+.care-card:hover, .health-card:hover, .article-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255,255,255,.98) !important;
+  box-shadow: 0 25px 65px rgba(35,61,43,.14), inset 0 1px 0 #fff !important;
+}
+.button, .nav-cta, .filter-button, .health-filter button, .health-banner {
+  border: 1px solid rgba(255,255,255,.7);
+  box-shadow: 0 7px 22px rgba(40,67,48,.09), inset 0 1px 0 rgba(255,255,255,.55);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+}
+.button-primary, .nav-cta {
+  background: linear-gradient(135deg, rgba(49,91,64,.96), rgba(36,70,49,.92)) !important;
+  box-shadow: 0 10px 26px rgba(36,70,49,.2), inset 0 1px 0 rgba(255,255,255,.22);
+}
+.hero::before {
+  width: 720px;
+  height: 720px;
+  right: -170px;
+  top: -190px;
+  background: radial-gradient(circle, rgba(210,231,209,.88) 0%, rgba(225,236,224,.38) 42%, transparent 72%);
+  filter: blur(7px);
+}
+.art-circle {
+  background: linear-gradient(145deg, rgba(255,255,255,.58), rgba(198,222,197,.48));
+  border: 1px solid rgba(255,255,255,.85);
+  box-shadow: 0 35px 80px rgba(54,91,62,.13), inset 0 2px 0 rgba(255,255,255,.95), inset 0 -18px 35px rgba(142,177,145,.14);
+  backdrop-filter: blur(22px) saturate(150%);
+  -webkit-backdrop-filter: blur(22px) saturate(150%);
+}
+.art-circle::before, .art-circle::after { border-color: rgba(255,255,255,.65); }
+.float-note { background: rgba(255,255,255,.52) !important; border: 1px solid rgba(255,255,255,.88) !important; box-shadow: 0 20px 48px rgba(37,67,45,.13), inset 0 1px 0 white !important; }
+.care-icon, .about-symbol, .health-banner-icon, .article-icon, .health-icon {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.9), 0 7px 18px rgba(46,81,55,.07);
+}
+.health-section, #health, .health-content { scroll-margin-top: 100px; }
+.health-banner {
+  background: linear-gradient(135deg, rgba(255,255,255,.72), rgba(232,242,229,.55)) !important;
+  border-radius: 28px !important;
+  cursor: pointer;
+}
+.health-content { margin-top: 16px; padding: clamp(18px, 3vw, 32px); border-radius: 30px !important; }
+.health-card, .article-card { overflow: hidden; }
+.health-filter button, .filter-button {
+  background: rgba(255,255,255,.55);
+  border-color: rgba(255,255,255,.82);
+  border-radius: 999px;
+}
+.health-filter button.active, .filter-button.active {
+  background: rgba(49,91,64,.94) !important;
+  color: white !important;
+  box-shadow: 0 7px 20px rgba(36,70,49,.18), inset 0 1px 0 rgba(255,255,255,.24);
+}
+.health-detail, .article-detail, .article-modal-content {
+  background: rgba(255,255,255,.78) !important;
+  border: 1px solid rgba(255,255,255,.9) !important;
+  border-radius: 26px !important;
+  box-shadow: 0 25px 70px rgba(35,61,43,.16) !important;
+  backdrop-filter: blur(30px) saturate(175%);
+  -webkit-backdrop-filter: blur(30px) saturate(175%);
+}
+input, select, textarea, .search-input {
+  background: rgba(255,255,255,.62) !important;
+  border: 1px solid rgba(255,255,255,.88) !important;
+  border-radius: 16px !important;
+  box-shadow: inset 0 1px 3px rgba(40,70,47,.035);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid rgba(90,143,103,.35);
+  outline-offset: 2px;
+}
+footer { background: rgba(231,239,228,.62) !important; backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); }
+::selection { background: rgba(124,169,127,.28); color: #203c2a; }
+@media (max-width: 680px) {
+  body { background-attachment: scroll; }
+  header { backdrop-filter: blur(22px) saturate(170%) !important; -webkit-backdrop-filter: blur(22px) saturate(170%) !important; }
+  .health-content { padding: 16px; }
+  .care-card:hover, .health-card:hover, .article-card:hover { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+
 </style>
 </head>
+
 <body>
-<header class="site-header"><div class="wrap nav"><a class="brand" href="#top">南森町まちなかクリニック<small>MINAMIMORIMACHI CLINIC</small></a><button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="navLinks">☰</button><nav class="nav-links" id="navLinks" aria-label="メインメニュー"><a href="#features">当院について</a><a href="#services">診療案内</a><a href="#guide">受診案内</a><a href="#access">アクセス</a></nav></div></header>
-<main id="top"><section class="hero"><div class="wrap hero-grid"><div class="reveal"><span class="eyebrow">YOUR NEIGHBORHOOD CLINIC</span><h1>毎日に、<br><span>安心を。</span></h1><p class="lead">いつもの毎日を、健やかに。地域の皆さまが気軽に相談できる、身近なクリニックを目指します。</p><div class="actions"><a class="btn primary" href="#guide">受診のご案内 <span aria-hidden="true">↗</span></a><a class="btn" href="#services">診療内容を見る</a></div></div><div class="hero-art" aria-label="クリニックをイメージしたイラスト"><div class="orb one"></div><div class="orb two"></div><div class="clinic-mark"><svg viewBox="0 0 120 120" fill="none" aria-hidden="true"><path d="M60 99S17 73 17 42C17 20 45 13 60 35C75 13 103 20 103 42C103 73 60 99 60 99Z" stroke="#47796e" stroke-width="5" stroke-linejoin="round"/><path d="M60 37V78M40 57H80" stroke="#47796e" stroke-width="7" stroke-linecap="round"/></svg></div><div class="art-note">地域とともに、健やかな毎日へ。</div></div></div></section>
-<section class="section" id="features"><div class="wrap"><div class="section-head"><span class="kicker">ABOUT US</span><h2>身近で、相談しやすい医療を。</h2><p>体調の小さな変化から日々の健康管理まで、一人ひとりに寄り添った診療を大切にします。</p></div><div class="cards"><article class="card"><div class="iconbox" aria-hidden="true">♡</div><span class="num">01 / CARE</span><h3>一人ひとりに寄り添う</h3><p>症状や不安を丁寧にうかがい、わかりやすい説明を心がけます。</p></article><article class="card"><div class="iconbox" aria-hidden="true">⌂</div><span class="num">02 / COMMUNITY</span><h3>地域の健康を支える</h3><p>身近な健康相談の窓口として、地域の皆さまの健やかな暮らしを応援します。</p></article><article class="card"><div class="iconbox" aria-hidden="true">✳</div><span class="num">03 / WELLNESS</span><h3>日々の健康管理</h3><p>不調があるときも、普段の健康が気になるときも、お気軽にご相談ください。</p></article></div></div></section>
-<section class="section" id="services"><div class="wrap about-grid"><div class="about-visual" aria-hidden="true"><div class="cross">＋</div></div><div class="about-copy"><span class="kicker">MEDICAL SERVICES</span><h2>診療案内</h2><p>診療内容や対応できる症状については、受診前にクリニックへご確認ください。ご自身の症状に迷う場合も、まずはお問い合わせください。</p><div class="actions"><a class="btn" href="#guide">受診案内を見る ↗</a></div></div></div></section>
-<section class="section" id="guide"><div class="wrap"><div class="section-head"><span class="kicker">VISIT GUIDE</span><h2>受診される方へ</h2><p>安心して受診いただけるよう、事前の確認をおすすめします。</p></div><div class="info-panel"><div><h3>受診前にご確認ください</h3><div class="info-row"><strong>持ちもの</strong><span>健康保険証またはマイナンバーカード、お薬手帳（お持ちの方）</span></div><div class="info-row"><strong>診療時間</strong><span>診療日・時間は、事前にクリニックへご確認ください。</span></div><div class="info-row"><strong>予約について</strong><span>予約の要否や方法は、直接お問い合わせください。</span></div></div><div><h3>ご相談について</h3><p style="color:var(--muted)">症状や受診方法について確認したいことがありましたら、来院前にお問い合わせください。緊急性の高い症状がある場合は、救急相談・救急医療機関をご利用ください。</p><div class="access-note">※このサイトの診療時間・電話番号などの詳細情報は、正確な情報を確認したうえで掲載してください。</div></div></div></div></section>
-<section class="section" id="access"><div class="wrap"><div class="section-head"><span class="kicker">ACCESS</span><h2>アクセス</h2><p>南森町エリアのクリニックです。ご来院前に所在地や交通手段をご確認ください。</p></div><div class="info-panel"><div><h3>所在地・交通案内</h3><div class="info-row"><strong>住所</strong><span>所在地の詳細はクリニックへご確認ください。</span></div><div class="info-row"><strong>最寄り駅</strong><span>南森町駅・大阪天満宮駅周辺</span></div></div><div><h3>ご来院の前に</h3><p style="color:var(--muted)">正確な住所、診療時間、休診日などは、確認でき次第このページに掲載します。</p></div></div></div></section>
-<section class="section"><div class="wrap"><div class="cta"><div><span class="kicker" style="color:#d8ebe3">WE ARE HERE FOR YOU</span><h2 style="margin:7px 0">気になることは、お気軽に。</h2><p>診療内容や受診方法について、事前にご確認ください。</p></div><a class="btn" href="#guide">受診案内を確認する ↗</a></div></div></section></main>
-<footer class="site-footer"><div class="wrap footer-inner"><span>© <span id="year"></span> 南森町まちなかクリニック</span><span>地域の皆さまの健やかな毎日のために。</span></div></footer>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="トップページへ">
+      <svg class="logo" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+        <path d="M50 85S13 63 13 36C13 15 39 8 50 29C61 8 87 15 87 36C87 63 50 85 50 85Z"
+          stroke="#47765d" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M19 49H37L46 33L58 64L67 47H82"
+          stroke="#47765d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-name">
+        南森町まちなかクリニック
+        <span class="brand-sub">MINAMIMORIMACHI CLINIC</span>
+      </span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="メインメニュー">
+      <a href="#about">クリニックについて</a>
+      <a href="#doctor">院長紹介</a>
+      <a href="#care">診療について</a>
+      <a href="#hours">診療時間・アクセス</a>
+      <a href="#health">毎日の健康ノート</a>
+    </nav>
+
+    <a class="nav-cta" href="#contact">お問い合わせ ↗</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy-area reveal">
+        <span class="eyebrow">YOUR HEALTH, OUR CARE</span>
+        <h1>毎日に、<br><span>安心を。</span></h1>
+        <p class="hero-copy">
+          体のちょっとした変化から、日々の健康のことまで。
+          気軽に相談できて、ほっと安心できる場所でありたい。
+          南森町まちなかクリニックは、地域の皆さまの毎日に寄り添います。
+        </p>
+        <div class="hero-actions">
+          <a href="#about" class="button button-primary">クリニックについて <span>↗</span></a>
+          <a href="#hours" class="button button-secondary">診療情報を見る <span>↓</span></a>
+        </div>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="art-circle">
+          <svg class="art-icon" viewBox="0 0 240 240" fill="none" aria-hidden="true">
+            <path d="M120 204S35 153 35 91C35 42 91 27 120 75C149 27 205 42 205 91C205 153 120 204 120 204Z"
+              fill="#f9fbf5" stroke="#47765d" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M49 113H88L105 83L128 149L146 111H191"
+              stroke="#47765d" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M120 20V41M20 61L35 71M220 61L205 71"
+              stroke="#91ad91" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="float-note note-one">
+          <strong>Listen with care.</strong>
+          一人ひとりに向き合う診療
+        </div>
+        <div class="float-note note-two">
+          <strong>Your health matters.</strong>
+          毎日の健康を大切に
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="wrap about-grid">
+      <div class="about-art reveal">
+        <svg viewBox="0 0 240 240" fill="none" aria-hidden="true">
+          <path d="M120 202S40 155 40 95C40 48 92 32 120 77C148 32 200 48 200 95C200 155 120 202 120 202Z"
+            fill="#fff" stroke="#47765d" stroke-width="5"/>
+          <path d="M52 118H87L104 89L126 151L145 116H188"
+            stroke="#47765d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="120" cy="28" r="6" fill="#9ab79a"/>
+          <circle cx="28" cy="95" r="5" fill="#9ab79a"/>
+          <circle cx="212" cy="95" r="5" fill="#9ab79a"/>
+        </svg>
+      </div>
+
+      <div class="about-text reveal">
+        <span class="eyebrow">ABOUT US</span>
+        <h3>体のことを、<br>気軽に話せる場所へ。</h3>
+        <p>
+          忙しい毎日の中では、自分の体のことを後回しにしてしまうこともあります。
+          「少し気になるけれど、相談するほどでもないかな」
+          そんな小さな不安も、安心して話せる場所を目指します。
+        </p>
+        <p>
+          症状だけを見るのではなく、その人の暮らしや気持ちにも目を向けること。
+          わかりやすい説明を心がけ、納得しながら健康について考えられる診療を大切にします。
+        </p>
+        <div class="values">
+          <div class="value">
+            <b>01 · 対話</b>
+            <span>話を丁寧に聞く</span>
+          </div>
+          <div class="value">
+            <b>02 · 安心</b>
+            <span>わかりやすく説明</span>
+          </div>
+          <div class="value">
+            <b>03 · 地域</b>
+            <span>暮らしに寄り添う</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="doctor">
+    <div class="wrap doctor-grid">
+      <div class="doctor-portrait reveal">
+        <svg viewBox="0 0 220 260" fill="none" aria-hidden="true">
+          <circle cx="110" cy="88" r="53" fill="#f8f6ee" stroke="#b7c9b3" stroke-width="3"/>
+          <path d="M58 84C57 39 80 24 110 24C145 24 165 48 162 89L151 70L143 53C123 70 94 75 72 70L58 84Z"
+            fill="#728c76"/>
+          <path d="M85 105C85 127 98 140 110 140C123 140 136 127 136 105"
+            stroke="#b9a28d" stroke-width="3" stroke-linecap="round"/>
+          <path d="M95 103H98M122 103H125" stroke="#59685e" stroke-width="5" stroke-linecap="round"/>
+          <path d="M86 133L76 155L110 180L144 155L134 133"
+            fill="#f7f8f3" stroke="#b7c9b3" stroke-width="2"/>
+          <path d="M76 155C46 166 35 189 32 238H188C185 189 174 166 144 155L110 188L76 155Z"
+            fill="#fff" stroke="#b7c9b3" stroke-width="3"/>
+          <path d="M110 188L99 204L110 218L121 204L110 188Z" fill="#47765d"/>
+          <path d="M92 165L110 188L128 165" stroke="#d5dfd1" stroke-width="3"/>
+          <path d="M151 188V216M151 216C151 228 169 228 169 216"
+            stroke="#91ad91" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <div class="doctor-caption">
+          <strong>南森町まちなかクリニック</strong>
+          地域の皆さまの健康を支えます
+        </div>
+      </div>
+
+      <div class="doctor-copy reveal">
+        <span class="eyebrow">DOCTOR</span>
+        <h3>院長紹介</h3>
+        <p>
+          体調の変化には、体からのさまざまなサインがあります。
+          そのサインを一緒に確認し、今できることを考えていく。
+          そんな丁寧な診療を大切にしていきます。
+        </p>
+        <p>
+          不安なことや気になる症状があれば、遠慮せずご相談ください。
+          患者さまのお話に耳を傾け、安心して診療を受けていただけるよう努めます。
+        </p>
+        <div class="doctor-name">
+          <small>院長</small>新森口 久美子
+        </div>
+        <p style="font-size:11px;color:#8b968c;">
+          \\u203b公開前に院長名の表記をご確認ください。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="care-section" id="care">
+    <div class="wrap">
+      <div class="section-heading center reveal">
+        <span class="eyebrow">OUR CARE</span>
+        <h2>健康のことを、<br>もっと身近に。</h2>
+        <p>
+          日々の体調管理から、気になる症状の相談まで。<br>
+          診療内容の詳細は、確定次第こちらでご案内します。
+        </p>
+      </div>
+
+      <div class="care-grid">
+        <article class="care-card reveal">
+          <div class="care-icon">♡</div>
+          <h3>日々の体調相談</h3>
+          <p>いつもと違う体調や、気になる変化について。小さなことでも相談しやすい診療を目指します。</p>
+        </article>
+
+        <article class="care-card reveal">
+          <div class="care-icon">⌁</div>
+          <h3>健康管理</h3>
+          <p>毎日を健やかに過ごすために、生活習慣や体調管理について一緒に考えます。</p>
+        </article>
+
+        <article class="care-card reveal">
+          <div class="care-icon">✳</div>
+          <h3>わかりやすい説明</h3>
+          <p>ご自身の体の状態や、今後の方針について理解しやすい説明を大切にします。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="hours-section" id="hours">
+    <div class="wrap">
+      <div class="section-heading reveal">
+        <span class="eyebrow">INFORMATION</span>
+        <h2>診療時間・アクセス</h2>
+        <p>ご来院前に、診療時間や所在地をご確認ください。現在、詳細情報を準備しています。</p>
+      </div>
+
+      <div class="hours-grid">
+        <div class="info-panel reveal">
+          <h3>診療時間</h3>
+          <table class="hours-table">
+            <thead>
+              <tr>
+                <th>診療時間</th>
+                <th>受付</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>午前</td>
+                <td><span class="pending">準備中</span></td>
+              </tr>
+              <tr>
+                <td>午後</td>
+                <td><span class="pending">準備中</span></td>
+              </tr>
+              <tr>
+                <td>休診日</td>
+                <td><span class="pending">準備中</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p>\\u203b診療時間・休診日は確定後に掲載します。</p>
+        </div>
+
+        <div class="info-panel reveal">
+          <h3>所在地・アクセス</h3>
+          <div class="map-placeholder">
+            <div>
+              <strong>南森町まちなかクリニック</strong>
+              所在地・アクセス情報は準備中です
+            </div>
+          </div>
+          <p>
+            住所、最寄り駅、道順などは、正確な情報が確定次第掲載します。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="health-section" id="health">
+    <div class="wrap">
+      <div class="section-heading center reveal">
+        <span class="eyebrow">HEALTH NOTE</span>
+        <h2>体の中には、<br>知らない世界がある。</h2>
+      </div>
+
+      <p class="health-intro reveal">
+        眠っている間の脳、痛みを感じる仕組み、体を守る免疫の働き。
+        私たちの体は、知れば知るほど不思議でいっぱいです。
+        医学の視点から、思わず誰かに話したくなる健康の話をお届けします。
+      </p>
+
+      <button class="health-banner reveal" id="healthToggle"
+        aria-expanded="false" aria-controls="healthContent">
+        <span class="health-banner-left">
+          <span class="health-banner-icon">✳</span>
+          <span>
+            <strong>毎日の健康ノートを読む</strong>
+            <small>脳・睡眠・心臓・免疫・胃腸など、23のミニブログ</small>
+          </span>
+        </span>
+        <span class="health-arrow" aria-hidden="true">⌄</span>
+      </button>
+
+      <div class="health-content" id="healthContent">
+        <div class="health-tools">
+          <div class="health-count">全 <strong id="articleCount">23</strong> 記事</div>
+          <div class="health-filter" id="healthFilters" aria-label="記事カテゴリー">
+            <button class="filter-button active" data-filter="all">すべて</button>
+            <button class="filter-button" data-filter="脳・睡眠">脳・睡眠</button>
+            <button class="filter-button" data-filter="体のしくみ">体のしくみ</button>
+            <button class="filter-button" data-filter="感覚・感情">感覚・感情</button>
+            <button class="filter-button" data-filter="免疫・健康">免疫・健康</button>
+          </div>
+        </div>
+
+        <div class="health-grid" id="healthGrid"></div>
+
+        <div class="health-disclaimer">
+          <strong>健康ノートについて：</strong>
+          ここで紹介する内容は、一般的な医学・健康情報をわかりやすく解説するもので、個別の診断や治療の代わりにはなりません。症状が続く場合や、強い痛み・息苦しさなど心配な症状がある場合は、医療機関に相談してください。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <span class="eyebrow" style="color:#c8ddc8;">CONTACT</span>
+        <h2>健康のこと、<br>ひとりで抱え込まないで。</h2>
+        <p>
+          ご相談・お問い合わせはこちらから。<br>
+          診療時間や受付方法をご確認のうえ、ご連絡ください。
+        </p>
+        <div class="phone-number">090-5905-7754</div>
+        <a href="tel:09059057754" class="button">電話をかける ↗</a>
+        <p style="font-size:10px;margin-top:18px;">
+          \\u203b電話番号・受付方法が公開可能な情報か、公開前にご確認ください。
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <a href="#top" class="brand">
+      <svg class="logo" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+        <path d="M50 85S13 63 13 36C13 15 39 8 50 29C61 8 87 15 87 36C87 63 50 85 50 85Z"
+          stroke="#47765d" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M19 49H37L46 33L58 64L67 47H82"
+          stroke="#47765d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-name">
+        南森町まちなかクリニック
+        <span class="brand-sub">MINAMIMORIMACHI CLINIC</span>
+      </span>
+    </a>
+    <div class="footer-copy">
+      © <span id="year"></span> 南森町まちなかクリニック. All rights reserved.
+    </div>
+  </div>
+</footer>
+
 <script>
-const toggle=document.getElementById('navToggle');const nav=document.getElementById('navLinks');toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'メニューを閉じる':'メニューを開く');toggle.textContent=open?'×':'☰'});nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','メニューを開く');toggle.textContent='☰'}));document.getElementById('year').textContent=new Date().getFullYear();
+
+
+const healthArticles = [
+  {
+    category: "脳・睡眠",
+    emoji: "🌙",
+    title: "眠っている間、脳は本当に休んでいるの？",
+    summary: "実は、眠っている脳は完全に停止しているわけではありません。睡眠中も脳は活動を続け、日中に経験したことや覚えたことを整理する働きに関わっています。",
+    more: [
+      "日中に覚えたことを、あとから思い出せるようにするには、情報を脳の中で整理する過程が大切です。睡眠はその過程を支える重要な時間のひとつ。勉強したあとに十分な睡眠をとることは、学習した内容を定着させるうえでも役立ちます。",
+      "睡眠中には、脳の活動や体の状態が異なる段階を繰り返します。夢を見ることが多い段階もあれば、深い眠りの段階もあります。睡眠は単なる「電源オフ」ではなく、脳と体のメンテナンス時間なのです。",
+      "ただし、睡眠時間を削って勉強すれば必ず効率が上がる、というわけではありません。日中の集中力や気分を保つためにも、年齢に合った十分な睡眠を確保することが大切です。"
+    ],
+    source: "NIH・睡眠について",
+    url: "https://www.nichd.nih.gov/health/topics/factsheets/sleep"
+  },
+  {
+    category: "脳・睡眠",
+    emoji: "🧠",
+    title: "「思い込み」で痛みが変わることがある？",
+    summary: "治療への期待や安心感が、痛みなどの感じ方に影響することがあります。この現象に関係するのが「プラセボ効果」です。気持ちと体の反応は、完全に切り離されているわけではありません。",
+    more: [
+      "たとえば、ある処置を受けると聞いて安心したり、症状がよくなると期待したりすると、痛みの感じ方が変化する場合があります。脳は体から届く信号をただ受け取るだけでなく、過去の経験や状況、予想なども使って、感覚を処理しているからです。",
+      "プラセボ効果は「気のせいだから痛くない」という意味ではありません。感じている痛みは本人にとって現実のものであり、その感じ方に脳の働きが関わることを示しています。",
+      "一方で、プラセボ効果があるからといって、薬や必要な治療をやめてよいわけではありません。重い病気を何でも思い込みだけで治せる、ということでもありません。安心できる医療環境と適切な治療は、どちらも大切です。"
+    ],
+    source: "NIH・プラセボ効果",
+    url: "https://newsinhealth.nih.gov/2023/01/powerful-placebo"
+  },
+  {
+    category: "脳・睡眠",
+    emoji: "👃",
+    title: "鼻が詰まると、食べ物の味まで変わるのはなぜ？",
+    summary: "舌で感じる味と、鼻で感じる香りは、食べ物のおいしさを一緒につくっています。鼻が詰まると香りを感じにくくなり、いつも食べているものが味気なく感じられることがあります。",
+    more: [
+      "舌が感じる基本的な味には、甘味、酸味、塩味、苦味、うま味があります。でも、私たちが普段「味」と呼んでいるものには、鼻から感じる香りの情報も大きく関わっています。",
+      "食べ物を口にすると、その香りの成分が口の奥から鼻へ抜けていきます。鼻が詰まってこの香りを感じにくくなると、味の細かな違いがわかりにくくなります。風邪をひいたときに食事がいつもよりおいしく感じられないのは、このためでもあります。",
+      "味やにおいの変化が急に起きたり、長く続いたりする場合には、風邪以外の原因も考えられます。気になるときは医療機関に相談しましょう。"
+    ],
+    source: "NIDCD・味覚と嗅覚",
+    url: "https://www.nidcd.nih.gov/health/smell-disorders"
+  },
+  {
+    category: "脳・睡眠",
+    emoji: "💤",
+    title: "夢は、どうして見るの？",
+    summary: "夢は睡眠中の脳活動と関係しています。特に、目が素早く動くレム睡眠では、鮮明な夢を経験することがあります。ただし、夢を見るのはレム睡眠中だけではありません。",
+    more: [
+      "夢には、日中の出来事や記憶、感情などが反映されることがあります。まったく関係のない場面が突然つながったような夢を見ることもありますが、夢の内容がいつも特定の意味を持つとは限りません。",
+      "睡眠中の脳は、覚醒しているときとは異なる活動パターンを示します。外からの刺激への反応も変わり、記憶や感情に関わる脳の活動も続いています。そのため、現実にはあり得ない展開を夢の中で自然に受け入れることもあります。",
+      "夢の内容だけで病気や性格を判断することはできません。悪夢が頻繁に続いて眠れないなど、生活に影響している場合は、睡眠について医療機関に相談する方法もあります。"
+    ],
+    source: "NINDS・脳の基礎知識",
+    url: "https://www.ninds.nih.gov/health-information/public-education/brain-basics"
+  },
+  {
+    category: "脳・睡眠",
+    emoji: "⏰",
+    title: "夜になると眠くなるのは、気合いの問題じゃない",
+    summary: "体には、おおよそ24時間周期で睡眠や覚醒のタイミングを調整する仕組みがあります。これを概日リズムと呼び、光や生活時間などの影響を受けます。",
+    more: [
+      "朝の光を浴びることや、毎日似た時間に起きることは、体内時計を整える手がかりになります。一方、夜遅くまで強い光を浴びたり、日によって起きる時間が大きく違ったりすると、眠るタイミングがずれることがあります。",
+      "睡眠には、体内時計だけでなく、起きている時間が長くなるほど眠気が強まる仕組みも関わっています。この2つの働きが組み合わさって、私たちが眠る時間と起きている時間が調整されています。",
+      "夜に眠くならないからといって、単純に意志が弱いということではありません。生活リズム、光、ストレス、体調など、いろいろな要因が関係します。"
+    ],
+    source: "NIH・睡眠について",
+    url: "https://www.nichd.nih.gov/health/topics/factsheets/sleep"
+  },
+  {
+    category: "体のしくみ",
+    emoji: "❤️",
+    title: "心臓は、どうやって自分のタイミングで動くの？",
+    summary: "心臓には、拍動のリズムを生み出す電気的な仕組みがあります。心臓の右心房にある洞結節は、通常の心拍リズムを始める重要な役割を担っています。",
+    more: [
+      "心臓が縮んだりゆるんだりするのは、心臓の筋肉に電気信号が伝わるためです。信号は決まった経路を通って広がり、心房や心室が適切なタイミングで動くように調整されます。",
+      "運動をすると、筋肉がより多くの酸素を必要とするため、心拍数が上がります。休んでいるときには、体の必要に応じて心拍数が下がります。心拍はいつも同じ速さではなく、体の状態に合わせて変化しているのです。",
+      "ただし、心拍数だけで健康状態を判断することはできません。動悸が繰り返す、胸の痛みや息苦しさを伴うなどの症状がある場合には、医療機関に相談してください。"
+    ],
+    source: "NHLBI・心臓のしくみ",
+    url: "https://www.nhlbi.nih.gov/health/heart"
+  },
+  {
+    category: "体のしくみ",
+    emoji: "🩸",
+    title: "赤血球は、細胞なのに「核」を持っていない？",
+    summary: "人間の成熟した赤血球には、細胞の設計図を保管する核がありません。そのぶん、酸素を運ぶヘモグロビンをたくさん含み、体のすみずみまで酸素を届ける働きをしています。",
+    more: [
+      "赤血球は、肺で受け取った酸素を血液に乗せて全身へ運びます。酸素と結びつくヘモグロビンというタンパク質が、赤血球の中に豊富に含まれているため、効率よく酸素を運べます。",
+      "成熟した赤血球が核を失うことは、酸素を運ぶという役割に適した特徴のひとつです。ただし、核がないため、自分自身を通常の細胞のように分裂させて増やすことはできません。赤血球は骨髄で新しくつくられます。",
+      "赤血球の寿命は平均して約120日とされ、古くなった赤血球は主に脾臓などで処理されます。体の中では、古い細胞を入れ替えながら酸素を運ぶ仕組みが絶えず働いているのです。"
+    ],
+    source: "MedlinePlus・血液検査",
+    url: "https://medlineplus.gov/blood.html"
+  },
+  {
+    category: "体のしくみ",
+    emoji: "🦴",
+    title: "骨は一度できたら、そのまま？ 実は常に作り替えられている",
+    summary: "骨は硬いだけの材料ではなく、生きた組織です。古い骨を分解する働きと、新しい骨をつくる働きがあり、体の中で少しずつ作り替えられています。",
+    more: [
+      "骨には、体を支えたり、臓器を守ったりする役割があります。また、カルシウムなどのミネラルを蓄える場所でもあります。さらに、骨の内部にある骨髄では、血液の細胞がつくられています。",
+      "骨は、古い部分を取り除く細胞と新しい骨をつくる細胞の働きによって、常に調整されています。この仕組みは骨のリモデリングと呼ばれます。成長期には骨が大きくなり、年齢を重ねても骨の作り替えは続きます。",
+      "骨の健康には、栄養、運動、ホルモン、年齢などさまざまな要素が関わります。特定の食品だけで骨が強くなるわけではなく、日頃の生活習慣を整えることが大切です。"
+    ],
+    source: "NIH・骨の健康",
+    url: "https://www.niams.nih.gov/health-topics/osteoporosis"
+  },
+  {
+    category: "体のしくみ",
+    emoji: "🫧",
+    title: "胃酸は強いのに、どうして胃は溶けないの？",
+    summary: "胃の中は強い酸性ですが、胃の内側には粘液や重炭酸イオンなどによる防御の仕組みがあります。胃の粘膜は、酸や消化酵素から自分自身を守っています。",
+    more: [
+      "胃酸には、食べ物の消化を助けたり、食べ物と一緒に入ってきた微生物の一部に対抗したりする役割があります。胃では酸だけでなく、タンパク質を分解する酵素なども働いています。",
+      "そんな環境でも胃が自分自身を守れるのは、粘膜の表面に防御機構があるためです。粘液の層や、粘膜の細胞同士のつながり、粘膜の修復などが組み合わさって、胃の組織を保護しています。",
+      "この防御と攻撃のバランスが崩れると、胃の粘膜が傷つくことがあります。胃痛などが続く場合には、自己判断だけで済ませず、医療機関に相談することが大切です。"
+    ],
+    source: "NIDDK・消化器の健康",
+    url: "https://www.niddk.nih.gov/health-information/digestive-diseases"
+  },
+  {
+    category: "体のしくみ",
+    emoji: "🦠",
+    title: "腸の中には、たくさんの微生物が暮らしている",
+    summary: "腸内には多種多様な微生物が暮らしており、これらは腸内細菌叢と呼ばれます。食べ物の成分の利用や、腸の環境、免疫の働きなどと関係しています。",
+    more: [
+      "腸内の微生物は、食事などから届く成分を利用し、その過程でさまざまな物質をつくります。その中には、腸の細胞が利用する物質や、体の生理機能に影響する物質もあります。",
+      "腸内細菌の構成は、食事、年齢、生活環境、薬の使用などによって変わります。同じ食事をしていても、すべての人の腸内環境が同じになるわけではありません。",
+      "「この菌は絶対に善玉」「この食品を食べれば必ず腸が整う」と単純に言い切るのは難しい分野です。特定の商品や食事法だけに頼るのではなく、さまざまな食品を取り入れたバランスのよい食事を心がけましょう。"
+    ],
+    source: "NIDDK・消化器の健康",
+    url: "https://www.niddk.nih.gov/health-information/digestive-diseases"
+  },
+  {
+    category: "体のしくみ",
+    emoji: "🫁",
+    title: "しゃっくりの正体は？ その役割はまだ謎が残っている",
+    summary: "しゃっくりは、横隔膜などの筋肉が不意に収縮し、その直後に声門が閉じることで起こります。特徴的な「ヒック」という音は、この急な動きと関係しています。",
+    more: [
+      "横隔膜は、胸とおなかの間にある呼吸に重要な筋肉です。息を吸うときには横隔膜が収縮して下がり、胸の中が広がります。しゃっくりでは、この筋肉が意図せず急に収縮します。",
+      "早食いや食べ過ぎ、炭酸飲料などがきっかけになることがありますが、原因がはっきりしないこともあります。多くのしゃっくりは短時間で自然におさまります。",
+      "しゃっくりの反射がなぜ存在するのかについては、完全には解明されていません。長時間続いて食事や睡眠に支障が出る場合には、別の原因が関わっていることもあるため、医療機関に相談してください。"
+    ],
+    source: "MedlinePlus・しゃっくり",
+    url: "https://medlineplus.gov/ency/article/003068.htm"
+  },
+  {
+    category: "感覚・感情",
+    emoji: "🪿",
+    title: "鳥肌が立つのは、昔の体の名残なの？",
+    summary: "鳥肌は、皮膚にある小さな筋肉が毛を立てる方向に縮むことで起こります。寒いときや強い感情が動いたときに見られ、体の反射のひとつです。",
+    more: [
+      "毛の多い動物では、毛が立つことで体の周囲に空気をため、保温に役立つことがあります。また、相手に大きく見せることに関係する場合もあります。",
+      "人間では体毛が少ないため、鳥肌が立っても昔の毛深い動物ほど大きな効果はありません。それでも、毛を立てる筋肉や、その筋肉を動かす神経の仕組みは残っています。",
+      "音楽に感動したとき、怖い場面を見たとき、懐かしい記憶に触れたときなどにも鳥肌が立つことがあります。寒さだけではなく、自律神経や感情に関わる反応として現れることがあるのです。"
+    ],
+    source: "医学的な皮膚・神経の基礎知識",
+    url: "https://www.ninds.nih.gov/health-information/public-education/brain-basics"
+  },
+  {
+    category: "感覚・感情",
+    emoji: "😢",
+    title: "涙は、悲しいときだけに出るわけじゃない",
+    summary: "涙には、目の表面を潤す涙、刺激から目を守る涙、感情に伴って出る涙などがあります。どれも同じように見えますが、出るきっかけや役割が異なります。",
+    more: [
+      "目の表面には、乾燥を防ぎ、滑らかに保つための涙が常にあります。煙やほこり、玉ねぎの刺激などを受けると、目を守るために涙が増えることがあります。",
+      "一方、悲しみや喜びなどの感情に伴って涙が出ることもあります。感情と涙の関係には脳や自律神経が関わっていますが、なぜ人間が感情によって涙を流すのか、そのすべてが解明されているわけではありません。",
+      "涙は目の健康を保つうえで重要です。目の乾燥、痛み、充血、涙が出続けるなどの症状が気になる場合は、眼科などで相談しましょう。"
+    ],
+    source: "NEI・目の健康",
+    url: "https://www.nei.nih.gov/learn-about-eye-health"
+  },
+  {
+    category: "感覚・感情",
+    emoji: "🖐️",
+    title: "痛みは、体の傷の大きさをそのまま表している？",
+    summary: "痛みは、体の状態を知らせる大切な感覚です。ただし、痛みの強さと組織の傷の大きさが、いつもぴったり一致するわけではありません。",
+    more: [
+      "痛みは、体から届く信号だけで決まるわけではありません。脳は、信号のほかにも、過去の経験、注意の向け方、安心感、ストレスなど、さまざまな情報を使って痛みを処理します。",
+      "たとえば、同じ刺激でも、状況によって痛みの感じ方が変わることがあります。また、けがが治ったあとも痛みが続くことがあり、その場合には神経の働きの変化などが関わっていることがあります。",
+      "だからといって、痛みを無視してよいという意味ではありません。痛みは体からの重要なサインです。強い痛みや長く続く痛み、急に現れた痛みなどは、医療機関で原因を確認することが大切です。"
+    ],
+    source: "NINDS・痛みについて",
+    url: "https://www.ninds.nih.gov/health-information/disorders"
+  },
+  {
+    category: "感覚・感情",
+    emoji: "👀",
+    title: "目で見たものを、脳はそのまま映しているわけではない",
+    summary: "目から入った光の情報は、神経を通って脳に伝わります。脳はその情報を整理し、周囲の状況や経験なども使って、私たちが見ている世界を組み立てています。",
+    more: [
+      "目はカメラのように光を受け取る役割を担いますが、見えている景色そのものが目の中に完成した形で存在するわけではありません。網膜が光を電気信号に変換し、その情報を脳が処理します。",
+      "錯視では、実際には同じ長さの線が違う長さに見えたり、静止した模様が動いているように感じられたりします。これは、脳が視覚情報を解釈する仕組みが、特定の条件で予想外の結果を生むためです。",
+      "錯視は、目や脳が単純に壊れている証拠ではありません。限られた情報から素早く周囲を理解するための仕組みが、特殊な図形などでは普段と違う見え方を生むことがあるのです。"
+    ],
+    source: "NINDS・脳の基礎知識",
+    url: "https://www.ninds.nih.gov/health-information/public-education/brain-basics"
+  },
+  {
+    category: "免疫・健康",
+    emoji: "🛡️",
+    title: "免疫は、病原体を攻撃するだけの仕組みじゃない",
+    summary: "免疫には、体に侵入した病原体などに対応する働きだけでなく、自分の組織をむやみに攻撃しないよう調整する働きもあります。攻撃と調整の両方が重要です。",
+    more: [
+      "免疫には、さまざまな病原体にすばやく反応する自然免疫と、特定の相手を認識する仕組みを含む獲得免疫などがあります。それぞれ異なる役割を持ち、協力しながら体を守っています。",
+      "免疫は強ければ強いほどよい、という単純なものではありません。必要なときに反応し、不要な反応を抑える調整も重要です。このバランスが崩れると、アレルギーや自己免疫に関わる問題が起こることがあります。",
+      "睡眠、栄養、運動など、基本的な生活習慣は健康を支える土台になります。ただし、特定の食品やサプリメントだけで免疫力が必ず上がる、と考えるのは適切ではありません。"
+    ],
+    source: "NIAID・免疫の基礎",
+    url: "https://www.niaid.nih.gov/research/immune-system-overview"
+  },
+  {
+    category: "免疫・健康",
+    emoji: "🌡️",
+    title: "熱が出るのは、体が必ず悪くなっているサイン？",
+    summary: "発熱は、感染症などに対して体が反応しているときに起こることがあります。体温の調節に関わる仕組みが変化し、通常より高い体温になるのです。",
+    more: [
+      "発熱は、免疫反応と関係する物質などが脳の体温調節に影響することで起こります。熱が出ること自体は、体の防御反応の一部として現れる場合があります。",
+      "ただし、熱があるから必ず軽い病気、あるいは熱が高いから必ず重い病気、と体温だけで判断することはできません。年齢、ほかの症状、体の状態、発熱が続く期間なども大切な情報です。",
+      "水分をとれない、意識がいつもと違う、呼吸が苦しいなどの症状がある場合は、早めに医療機関へ相談してください。発熱が続くときや、子どもの発熱で判断に迷うときも、医療機関などの案内を利用しましょう。"
+    ],
+    source: "MedlinePlus・発熱",
+    url: "https://medlineplus.gov/fever.html"
+  },
+  {
+    category: "免疫・健康",
+    emoji: "💪",
+    title: "筋肉痛が強いほど、運動の効果も大きい？",
+    summary: "筋肉痛が強いことと、運動の効果が大きいことは同じではありません。運動に慣れていない動きや、普段と違う負荷によって、あとから筋肉痛が現れることがあります。",
+    more: [
+      "運動後、数時間から翌日以降に痛みや張りが出ることがあります。これは遅発性筋肉痛と呼ばれ、普段と違う運動などによって筋肉に生じた変化や、その後の反応が関係しています。",
+      "筋肉痛が起きていなくても、運動による効果がないというわけではありません。体力をつけるには、体調や経験に合わせて運動を続け、休息や食事も含めて整えることが大切です。",
+      "強い痛みを我慢して運動を続ける必要はありません。鋭い痛み、強い腫れ、著しい脱力など、いつもの筋肉痛と違う症状がある場合には、運動を中止して医療機関に相談してください。"
+    ],
+    source: "MedlinePlus・運動と健康",
+    url: "https://medlineplus.gov/exerciseandphysicalfitness.html"
+  },
+  {
+    category: "免疫・健康",
+    emoji: "💧",
+    title: "水を飲むタイミングは、のどが渇いてからでいい？",
+    summary: "のどの渇きは、水分が必要になっていることを知らせる大切なサインです。ただし、暑い日や運動中などは、渇きを感じる前から水分補給を意識することも重要です。",
+    more: [
+      "体の水分は、汗や尿、呼吸などを通して失われます。暑い環境や運動中には汗が増え、普段より多くの水分が必要になることがあります。",
+      "のどの渇きの感じ方には個人差があり、年齢や体調によっても変わります。長時間の運動や暑い環境では、休憩を取りながら水分を補給するなど、状況に応じた対応が必要です。",
+      "水分補給は大切ですが、短時間に大量の水を無理に飲むことも安全とは限りません。持病があって水分量の指示を受けている人は、その指示を優先してください。"
+    ],
+    source: "MedlinePlus・脱水",
+    url: "https://medlineplus.gov/dehydration.html"
+  },
+  {
+    category: "免疫・健康",
+    emoji: "☀️",
+    title: "体温は、1日の中でも少しずつ変わっている",
+    summary: "体温は、1日中まったく同じというわけではありません。体内時計や活動、環境などの影響を受け、一般的には早朝に低めで、夕方ごろに高めになる傾向があります。",
+    more: [
+      "私たちの体には、体温を一定の範囲に保つための調節機能があります。しかし、一定の範囲に保つことと、数字が一日中まったく変化しないことは別です。",
+      "体温は測る場所や測定方法、運動、入浴、食事、周囲の温度などによっても変わります。そのため、一度の測定値だけでなく、いつ、どこで、どのように測ったかも参考になります。",
+      "いつもと違う体調がある場合は、体温の数字だけで判断せず、ほかの症状も確認しましょう。発熱が続く場合や心配な症状がある場合は、医療機関に相談してください。"
+    ],
+    source: "MedlinePlus・体温",
+    url: "https://medlineplus.gov/ency/article/001982.htm"
+  },
+  {
+    category: "体のしくみ",
+    emoji: "👁️",
+    title: "瞳の大きさは、明るさ以外でも変わることがある",
+    summary: "瞳孔は、目に入る光の量を調節するために大きさが変化します。また、注意や感情、薬の影響などによっても変化することがあります。",
+    more: [
+      "明るい場所では瞳孔が小さくなり、暗い場所では大きくなります。これによって、目に入る光の量を調節しています。瞳孔の動きは、目と脳をつなぐ神経の働きに支えられています。",
+      "瞳孔の大きさは光だけで決まるわけではなく、注意を向けていることや緊張などの状態によっても変化する場合があります。そのため、瞳孔は神経の働きを調べるときにも観察されます。",
+      "ただし、瞳孔の変化だけで気持ちや病気を決めつけることはできません。急に瞳孔の大きさが左右で違って見えるなど、いつもと違う変化がある場合は医療機関に相談してください。"
+    ],
+    source: "NINDS・脳と神経の基礎",
+    url: "https://www.ninds.nih.gov/health-information/public-education/brain-basics"
+  },
+  {
+    category: "感覚・感情",
+    emoji: "🧠",
+    title: "あくびは、うつることがある。でも理由は単純じゃない",
+    summary: "誰かがあくびをすると、自分まであくびをしたくなることがあります。人の行動を見たり、あくびについて考えたりすることがきっかけになる場合がありますが、仕組みのすべてが解明されているわけではありません。",
+    more: [
+      "あくびは眠いときや退屈なときだけでなく、起きた直後などにも起こります。あくびの生理的な役割については研究が続いており、「脳を冷やすためだけ」など、ひとつの説明だけで完全に理解できるわけではありません。",
+      "他人のあくびを見てあくびが出る現象については、注意や社会的な反応など、さまざまな要因が研究されています。ただし、あくびがうつることだけで、共感力や性格を正確に判断できるわけではありません。",
+      "あくびが出るのは、ごく自然な体の反応です。頻繁なあくびに強い眠気などが伴い、日中の生活に支障がある場合は、睡眠の状態について相談してみてもよいでしょう。"
+    ],
+    source: "NINDS・脳の基礎知識",
+    url: "https://www.ninds.nih.gov/health-information/public-education/brain-basics"
+  },
+  {
+    category: "免疫・健康",
+    emoji: "🧴",
+    title: "皮膚は、ただ体を覆っているだけじゃない",
+    summary: "皮膚は、外からの刺激や微生物などから体を守る大切なバリアです。体の水分が失われすぎないようにする働きや、温度調節に関わる働きも担っています。",
+    more: [
+      "皮膚は、表面に近い部分から深い部分まで、複数の層で構成されています。皮膚の状態を保つ仕組みは、外からの刺激を防ぐだけでなく、体の内部の環境を維持するうえでも重要です。",
+      "汗が蒸発するときには熱が奪われるため、発汗は体温調節に役立ちます。また、皮膚には感覚を受け取る神経があり、熱さ、冷たさ、圧力、痛みなどを感じることができます。",
+      "皮膚は毎日、衣服や環境、紫外線などの影響を受けています。日焼け対策や保湿など、生活環境に合わせたケアを心がけ、発疹やかゆみなどが続く場合は医療機関に相談しましょう。"
+    ],
+    source: "MedlinePlus・皮膚の健康",
+    url: "https://medlineplus.gov/skinconditions.html"
+  }
+];
+
+const healthGrid = document.getElementById("healthGrid");
+const articleCount = document.getElementById("articleCount");
+const healthToggle = document.getElementById("healthToggle");
+const healthContent = document.getElementById("healthContent");
+const healthFilters = document.getElementById("healthFilters");
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+function escapeHTML(value) {
+  return String(value).replace(/[\x26<>"\x27]/g, char => ({
+    "\x26": "\x26amp;",
+    "<": "\x26lt;",
+    ">": "\x26gt;",
+    \x27"\x27: "\x26quot;",
+    "\x27": "\x26#39;"
+  })[char]);
+}
+
+function renderHealthArticles(filter = "all") {
+  const filtered = filter === "all"
+    ? healthArticles
+    : healthArticles.filter(article => article.category === filter);
+
+  articleCount.textContent = filtered.length;
+
+  if (!filtered.length) {
+    healthGrid.innerHTML = \x27<div class="health-empty">記事がありません。</div>\x27;
+    return;
+  }
+
+  healthGrid.innerHTML = filtered.map(article => {
+    const originalIndex = healthArticles.indexOf(article) + 1;
+
+    const paragraphs = article.more.map((paragraph, index) => {
+      const label = index === 0 ? "もう少し詳しく" : "";
+      return `<p>${label ? `<strong>${label}：</strong>` : ""}${escapeHTML(paragraph)}</p>`;
+    }).join("");
+
+    const safeURL = /^https:\/\/[a-z0-9.-]+\//i.test(article.url)
+      ? article.url
+      : "#";
+
+    return `
+      <article class="health-card reveal visible">
+        <div class="health-card-top">
+          <span class="health-number">NOTE ${String(originalIndex).padStart(2, "0")}</span>
+          <span class="health-tag">${escapeHTML(article.category)}</span>
+          <span class="health-emoji" aria-hidden="true">${article.emoji}</span>
+        </div>
+
+        <h3>${escapeHTML(article.title)}</h3>
+        <p class="health-summary">${escapeHTML(article.summary)}</p>
+
+        <div class="health-more">
+          ${paragraphs}
+        </div>
+
+        <div class="health-card-foot">
+          <span>健康のミニブログ</span>
+          <span><a href="${safeURL}" target="_blank" rel="noopener noreferrer">参考情報 ↗</a></span>
+        </div>
+      </article>
+    `;
+  }).join("");
+}
+
+renderHealthArticles();
+
+healthToggle.addEventListener("click", () => {
+  const isOpen = healthToggle.getAttribute("aria-expanded") === "true";
+
+  healthToggle.setAttribute("aria-expanded", String(!isOpen));
+  healthContent.classList.toggle("open", !isOpen);
+
+  if (!isOpen) {
+    setTimeout(() => {
+      healthContent.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest"
+      });
+    }, 80);
+  }
+});
+
+healthFilters.addEventListener("click", event => {
+  const button = event.target.closest("[data-filter]");
+  if (!button) return;
+
+  healthFilters.querySelectorAll(".filter-button").forEach(item => {
+    item.classList.toggle("active", item === button);
+  });
+
+  renderHealthArticles(button.dataset.filter);
+});
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute("aria-label", isOpen ? "メニューを閉じる" : "メニューを開く");
+  menuToggle.textContent = isOpen ? "×" : "☰";
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "メニューを開く");
+    menuToggle.textContent = "☰";
+  });
+});
+
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".reveal").forEach(element => {
+  revealObserver.observe(element);
+});
 </script>
-</body></html>
+
+</body>
+</html>
