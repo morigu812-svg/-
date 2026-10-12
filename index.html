@@ -1,11 +1,31 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#f6f8f3">
-<meta name="description" content="南森町まちなかクリニック。地域の皆さまの毎日の健康を支え、安心して相談できるクリニックを目指します。">
-<title>南森町まちなかクリニック｜毎日に、安心を。</title>
+<meta name="description" content="南森町まちなかクリニックの公式サイト。日々の体調相談や健康管理について、地域の皆さまが気軽に相談できるクリニックを目指しています。診療時間・アクセス・健康情報をご案内します。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="南森町まちなかクリニック">
+<meta property="og:title" content="南森町まちなかクリニック｜毎日に、安心を。">
+<meta property="og:description" content="日々の体調相談から健康管理まで。地域の皆さまが気軽に相談できるクリニックを目指しています。">
+<meta name="twitter:card" content="summary">
+<title>南森町まちなかクリニック｜診療案内・健康管理・アクセス</title>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "南森町まちなかクリニック",
+  "alternateName": "Minamimorimachi Clinic",
+  "description": "日々の体調相談や健康管理について、地域の皆さまが気軽に相談できるクリニックを目指しています。",
+  "availableLanguage": "Japanese"
+}
+</script>
 
 <style>
 :root {
@@ -997,7 +1017,8 @@ footer {
 body {
   background:
     radial-gradient(ellipse at 8% 4%, rgba(202,226,204,.72), transparent 34rem),
-    radial-gradient(ellipse at 96% 23%, rgba(222,225,248,.52), transparent 32rem),    radial-gradient(ellipse at 50% 76%, rgba(255,255,255,.8), transparent 42rem),
+    radial-gradient(ellipse at 96% 23%, rgba(222,225,248,.52), transparent 32rem),
+    radial-gradient(ellipse at 50% 76%, rgba(255,255,255,.8), transparent 42rem),
     #f2f6f0;
   background-attachment: fixed;
 }
@@ -1115,6 +1136,373 @@ footer { background: rgba(231,239,228,.62) !important; backdrop-filter: blur(24p
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }
 
+\n/* ===== Liquid Glass 全体統一パッチ ===== */
+:root {
+  --lg-ink: #203d3d;
+  --lg-glass: rgba(255,255,255,.48);
+  --lg-border: rgba(255,255,255,.82);
+  --lg-shadow: 0 16px 42px rgba(48,91,87,.10), 0 3px 10px rgba(48,91,87,.045), inset 0 1px 0 rgba(255,255,255,.86);
+  --lg-blur: blur(24px) saturate(165%);
+}
+html { background: #eff8f5; }
+body {
+  color: var(--lg-ink);
+  background:
+    radial-gradient(ellipse at 8% 5%, rgba(174,232,216,.62), transparent 34rem),
+    radial-gradient(ellipse at 92% 15%, rgba(194,222,250,.60), transparent 34rem),
+    radial-gradient(ellipse at 72% 75%, rgba(222,230,255,.42), transparent 36rem),
+    linear-gradient(145deg,#eef8f5 0%,#f5f9fc 52%,#edf7f3 100%) !important;
+  background-attachment: fixed;
+}
+/* カード・ナビ・操作部品を共通のガラス素材に統一 */
+.glass, .feature-card, .service-card, .doctor-panel, .access-card,
+.contact-card, .intro-art, .doctor-placeholder, .health-card,
+.health-content, .health-banner, .health-tools, .section-heading,
+.footer-inner, .hero-glass-card, .floating-chip, .nav, .site-header,
+header.site-header, .header-contact, .menu-toggle, .button-glass,
+.health-filter button {
+  border: 1px solid var(--lg-border) !important;
+  box-shadow: var(--lg-shadow) !important;
+  -webkit-backdrop-filter: var(--lg-blur);
+  backdrop-filter: var(--lg-blur);
+}
+.glass, .feature-card, .service-card, .doctor-panel, .access-card,
+.contact-card, .intro-art, .doctor-placeholder, .health-card,
+.health-content, .health-tools, .footer-inner {
+  background: var(--lg-glass) !important;
+  border-radius: 26px !important;
+}
+.site-header, header.site-header {
+  background: rgba(245,251,249,.70) !important;
+  border-bottom-color: rgba(255,255,255,.82) !important;
+}
+.hero-glass-card {
+  background: linear-gradient(145deg,rgba(255,255,255,.76),rgba(235,248,245,.48)) !important;
+  border-radius: 34px !important;
+}
+.section-heading {
+  background: rgba(255,255,255,.34) !important;
+  border-radius: 24px !important;
+  padding: clamp(20px,3vw,32px);
+}
+.health-banner {
+  background: linear-gradient(135deg,rgba(255,255,255,.76),rgba(222,244,238,.58)) !important;
+  border-radius: 26px !important;
+}
+.health-content { background: rgba(255,255,255,.34) !important; }
+.health-card {
+  background: linear-gradient(145deg,rgba(255,255,255,.70),rgba(242,250,248,.48)) !important;
+}
+.header-contact, .button-primary {
+  background: linear-gradient(135deg,rgba(38,139,121,.95),rgba(45,115,123,.91)) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,.48) !important;
+}
+.button-glass, .menu-toggle, .health-filter button {
+  background: rgba(255,255,255,.50) !important;
+}
+.health-filter button.active { background: rgba(39,132,117,.92) !important; color: #fff !important; }
+.site-footer, footer {
+  background: rgba(235,246,243,.50) !important;
+  border-top: 1px solid rgba(255,255,255,.76);
+  -webkit-backdrop-filter: var(--lg-blur);
+  backdrop-filter: var(--lg-blur);
+}
+.feature-card, .service-card, .access-card, .health-card, .intro-art, .doctor-panel {
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+.feature-card:hover, .service-card:hover, .access-card:hover, .health-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,.68) !important;
+  box-shadow: 0 22px 50px rgba(48,91,87,.13), inset 0 1px 0 rgba(255,255,255,.95) !important;
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass, .feature-card, .service-card, .doctor-panel, .access-card,
+  .contact-card, .intro-art, .doctor-placeholder, .health-card,
+  .health-content, .health-banner, .section-heading, .site-header,
+  .footer-inner, .hero-glass-card {
+    background: rgba(248,255,253,.93) !important;
+  }
+}
+@media (max-width: 680px) {
+  .section-heading { padding: 20px 16px; }
+  .glass, .feature-card, .service-card, .doctor-panel, .access-card,
+  .health-card, .footer-inner { border-radius: 22px !important; }
+  .feature-card:hover, .service-card:hover, .access-card:hover, .health-card:hover { transform: none; }
+}
+
+
+
+/* ===== 表示崩れ対策：本文をJavaScriptに依存せず表示 ===== */
+.reveal,
+.reveal.visible,
+.contact-card.reveal {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  translate: none !important;
+}
+
+/* CONTACTセクションの高さ・余白・文字色を安定させる */
+.contact-section {
+  display: block;
+  position: relative;
+  min-height: 0;
+  height: auto;
+  padding: clamp(48px, 8vw, 100px) 20px;
+  overflow: visible;
+}
+.contact-section .wrap {
+  width: min(100%, 1120px);
+  margin-inline: auto;
+}
+.contact-card {
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  height: auto;
+  padding: clamp(32px, 6vw, 64px) clamp(20px, 5vw, 48px);
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(49,91,64,.88), rgba(36,70,49,.82));
+  border: 1px solid rgba(255,255,255,.72);
+  box-shadow: 0 22px 60px rgba(35,61,43,.15), inset 0 1px 0 rgba(255,255,255,.5);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  backdrop-filter: blur(24px) saturate(160%);
+}
+.contact-card h2 {
+  display: block;
+  margin: 18px 0 14px;
+  color: #fff;
+  font-size: clamp(25px, 4vw, 40px);
+  line-height: 1.5;
+}
+.contact-card p {
+  display: block;
+  margin: 12px auto 22px;
+  color: rgba(255,255,255,.9);
+  line-height: 1.9;
+}
+.contact-card .phone-number {
+  display: block;
+  margin: 18px 0;
+  color: #fff;
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 750;
+  letter-spacing: .04em;
+}
+.contact-card .button {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 14px 25px;
+  border-radius: 999px;
+  color: #254b37;
+  background: rgba(255,255,255,.9);
+  border: 1px solid rgba(255,255,255,.95);
+  box-shadow: 0 10px 28px rgba(0,0,0,.1), inset 0 1px 0 #fff;
+}
+.site-footer, footer {
+  position: relative;
+  display: block;
+  height: auto;
+  min-height: 0;
+  margin-top: 0;
+}
+@media (max-width: 600px) {
+  .contact-section { padding: 42px 14px; }
+  .contact-card { min-height: 0; padding: 34px 18px; }
+}
+
+
+
+/* ===== Liquid Glass: stronger transparency ===== */
+:root {
+  --glass: rgba(255, 255, 255, .16);
+  --glass-strong: rgba(255, 255, 255, .28);
+  --lg-glass: rgba(255, 255, 255, .14);
+  --lg-border: rgba(255, 255, 255, .42);
+}
+.glass,
+.glass-card,
+.feature-card,
+.service-card,
+.doctor-panel,
+.access-card,
+.contact-card,
+.intro-art,
+.doctor-placeholder,
+.health-card,
+.health-content,
+.health-banner,
+.health-tools,
+.footer-inner,
+.hero-glass-card,
+.floating-chip,
+.nav,
+.site-header,
+header.site-header {
+  background-color: rgba(255, 255, 255, .14) !important;
+  border-color: rgba(255, 255, 255, .42) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(175%);
+  backdrop-filter: blur(28px) saturate(175%);
+  box-shadow: 0 12px 36px rgba(45, 95, 105, .08),
+              inset 0 1px 0 rgba(255, 255, 255, .45);
+}
+.hero-glass-card { background-color: rgba(255,255,255,.20) !important; }
+.floating-chip { background-color: rgba(255,255,255,.18) !important; }
+.site-header, header.site-header { background-color: rgba(245, 253, 250, .38) !important; }
+.button-glass, .header-contact, .menu-toggle, .health-filter button {
+  background-color: rgba(255,255,255,.20) !important;
+  border: 1px solid rgba(255,255,255,.48) !important;
+  -webkit-backdrop-filter: blur(22px) saturate(170%);
+  backdrop-filter: blur(22px) saturate(170%);
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass, .glass-card, .feature-card, .service-card, .doctor-panel, .access-card,
+  .contact-card, .intro-art, .doctor-placeholder, .health-card, .health-content,
+  .health-banner, .health-tools, .footer-inner, .hero-glass-card, .floating-chip,
+  .nav, .site-header, header.site-header { background: rgba(245,253,250,.78) !important; }
+}
+
+
+/* ===== ページ背景を全セクションで統一 ===== */
+html, body {
+  min-height: 100%;
+  background-color: #edf7f3 !important;
+}
+body {
+  background-image: radial-gradient(ellipse at 12% 0%, rgba(186, 235, 218, .42) 0%, transparent 38%),
+                    radial-gradient(ellipse at 92% 18%, rgba(190, 221, 246, .40) 0%, transparent 40%),
+                    linear-gradient(180deg, #edf7f3 0%, #f1f8f7 52%, #edf7f3 100%) !important;
+  background-attachment: fixed !important;
+}
+main, section, .section, .hero, .site-footer, footer,
+#home, #about, #doctor, #services, #access, #health, #contact {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+/* 背景色の異なる帯を作らず、ガラスパネルだけを透過表示 */
+.section:nth-of-type(even), .section:nth-of-type(odd),
+.health-section, .contact-section { background: transparent !important; }
+
+
+/* ===== セクション境界をわかりやすくする調整 ===== */
+main > section {
+  position: relative;
+  isolation: isolate;
+  padding-top: clamp(76px, 8vw, 112px);
+  padding-bottom: clamp(76px, 8vw, 112px);
+}
+
+/* セクション間に淡いラインとグローを置き、背景の連続感を保ちつつ区切る */
+main > section + section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: max(6%, calc((100% - 1080px) / 2));
+  right: max(6%, calc((100% - 1080px) / 2));
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%, rgba(73, 151, 143, .18) 18%,
+    rgba(255, 255, 255, .9) 50%,
+    rgba(93, 150, 198, .18) 82%, transparent 100%);
+  box-shadow: 0 1px 12px rgba(255,255,255,.45);
+  pointer-events: none;
+}
+
+/* 見出しをセクションの目印にする */
+.section-heading {
+  position: relative;
+  max-width: 780px;
+  margin: 0 auto clamp(34px, 4vw, 52px);
+  padding: 0 0 22px;
+}
+.section-heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 64px;
+  height: 3px;
+  border-radius: 999px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, rgba(77,190,164,.85), rgba(116,174,229,.8));
+  box-shadow: 0 0 16px rgba(95,174,183,.22);
+}
+
+/* セクションの背景色は変えず、うっすらとした光の帯だけを交互に置く */
+main > section:nth-of-type(even) {
+  background: linear-gradient(180deg,
+    rgba(255,255,255,.12) 0%,
+    rgba(255,255,255,.025) 50%,
+    rgba(255,255,255,.12) 100%);
+}
+
+main > section:first-child {
+  padding-top: clamp(48px, 6vw, 78px);
+}
+
+@media (max-width: 700px) {
+  main > section {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+  .section-heading {
+    margin-bottom: 30px;
+    padding-bottom: 18px;
+  }
+  main > section + section::before {
+    left: 7%;
+    right: 7%;
+  }
+}
+
+  
+
+/* ===== セクション区切りをはっきり見せる強調版 ===== */
+main > section + section::before {
+  height: 2px !important;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(40, 126, 119, .58) 14%,
+    rgba(255, 255, 255, .98) 50%,
+    rgba(64, 125, 177, .52) 86%,
+    transparent 100%) !important;
+  box-shadow: 0 1px 0 rgba(255,255,255,.85),
+              0 3px 14px rgba(53, 118, 133, .18) !important;
+}
+
+/* 見出しのアクセントラインを少し太く、長く */
+.section-heading::after {
+  width: 96px !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, #35a991 0%, #6aa8df 100%) !important;
+  box-shadow: 0 2px 10px rgba(53, 139, 151, .28) !important;
+}
+
+/* セクション間に十分な余白を確保 */
+main > section {
+  padding-top: clamp(88px, 9vw, 124px) !important;
+  padding-bottom: clamp(88px, 9vw, 124px) !important;
+}
+main > section:first-child {
+  padding-top: clamp(48px, 6vw, 78px) !important;
+}
+
+@media (max-width: 700px) {
+  main > section {
+    padding-top: 72px !important;
+    padding-bottom: 72px !important;
+  }
+  main > section + section::before {
+    left: 5% !important;
+    right: 5% !important;
+  }
+}
 </style>
 </head>
 
@@ -1143,12 +1531,11 @@ footer { background: rgba(231,239,228,.62) !important; backdrop-filter: blur(24p
       <a href="#health">毎日の健康ノート</a>
     </nav>
 
-    <a class="nav-cta" href="#contact">お問い合わせ ↗</a>
-    <button class="menu-toggle" id="menuToggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="メニューを開く" aria-expanded="false" onclick="toggleClinicMenu(event)">☰</button>
   </div>
 </header>
 
-<main id="top">
+<main id="top" aria-label="南森町まちなかクリニックのメインコンテンツ">
 
   <section class="hero">
     <div class="wrap hero-grid">
@@ -1413,23 +1800,7 @@ footer { background: rgba(231,239,228,.62) !important; backdrop-filter: blur(24p
     </div>
   </section>
 
-  <section class="contact-section" id="contact">
-    <div class="wrap">
-      <div class="contact-card reveal">
-        <span class="eyebrow" style="color:#c8ddc8;">CONTACT</span>
-        <h2>健康のこと、<br>ひとりで抱え込まないで。</h2>
-        <p>
-          ご相談・お問い合わせはこちらから。<br>
-          診療時間や受付方法をご確認のうえ、ご連絡ください。
-        </p>
-        <div class="phone-number">090-5905-7754</div>
-        <a href="tel:09059057754" class="button">電話をかける ↗</a>
-        <p style="font-size:10px;margin-top:18px;">
-          \\u203b電話番号・受付方法が公開可能な情報か、公開前にご確認ください。
-        </p>
-      </div>
-    </div>
-  </section>
+
 
 </main>
 
@@ -1767,12 +2138,12 @@ const healthFilters = document.getElementById("healthFilters");
 document.getElementById("year").textContent = new Date().getFullYear();
 
 function escapeHTML(value) {
-  return String(value).replace(/[\x26<>"\x27]/g, char => ({
-    "\x26": "\x26amp;",
-    "<": "\x26lt;",
-    ">": "\x26gt;",
-    \x27"\x27: "\x26quot;",
-    "\x27": "\x26#39;"
+  return String(value).replace(/[&<>"']/g, char => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
   })[char]);
 }
 
@@ -1784,7 +2155,7 @@ function renderHealthArticles(filter = "all") {
   articleCount.textContent = filtered.length;
 
   if (!filtered.length) {
-    healthGrid.innerHTML = \x27<div class="health-empty">記事がありません。</div>\x27;
+    healthGrid.innerHTML = '<div class="health-empty">記事がありません。</div>';
     return;
   }
 
@@ -1856,21 +2227,28 @@ healthFilters.addEventListener("click", event => {
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
-menuToggle.addEventListener("click", () => {
-  const isOpen = navLinks.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
-  menuToggle.setAttribute("aria-label", isOpen ? "メニューを閉じる" : "メニューを開く");
-  menuToggle.textContent = isOpen ? "×" : "☰";
-});
+// 他のスクリプトにエラーがあっても、メニューボタン自体から開閉できるようにする
+function toggleClinicMenu(event) {
+  if (event) event.stopPropagation();
+  const button = document.getElementById("menuToggle");
+  const menu = document.getElementById("navLinks");
+  if (!button || !menu) return;
+  const isOpen = menu.classList.toggle("open");
+  button.setAttribute("aria-expanded", String(isOpen));
+  button.setAttribute("aria-label", isOpen ? "メニューを閉じる" : "メニューを開く");
+  button.textContent = isOpen ? "×" : "☰";
+}
 
-navLinks.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.setAttribute("aria-label", "メニューを開く");
-    menuToggle.textContent = "☰";
+if (navLinks && menuToggle) {
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "メニューを開く");
+      menuToggle.textContent = "☰";
+    });
   });
-});
+}
 
 const revealObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
